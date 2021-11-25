@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ENERGY EDUCATION</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700;1,900&family=Oswald:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,500&family=Rubik&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+	<style type="text/css">
+		body{
+			background-color: #E5E5E5;
+			display: grid;
+			grid-template-columns: 98%;
+			grid-row-gap: 10rem;
+			justify-content: center;
+		}
+
+		.Navigation{
+			width: 95.5%;
+			height: 5rem;
+			display: flex;
+			flex-direction: row;
+			margin-left: 23px;
+			justify-content: space-between;
+		}
+
+		.N1{
+			min-width: 70rem;
+			width: 80%;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			font-family: sans-serif;
+			font-family: 'Oswald', sans-serif;
+		}
+
+		.N2{
+			min-width: 15rem;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			font-family: sans-serif;
+			font-family: 'Oswald', sans-serif;
+		}
+
+		.Logo{
+			font-size: 2rem;
+			color: white;
+			width: 17rem;
+			height: 70%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 2px 2px 10px black;
+			border-radius: 10px 10px 10px 10px;
+			background-color: #326da7;
+		}
+
+		.L1{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L1.png?raw=true');
+			background-size: cover;
+		}
+
+		.L2{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L2.png?raw=true');
+			background-size: cover;
+		}
+
+		.L3{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L3.png?raw=true');
+			background-size: cover;
+		}
+
+		.L4{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L4.png?raw=true');
+			background-size: cover;
+		}
+
+		.L5{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L5.png?raw=true');
+			background-size: cover;
+		}
+
+		.L6{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L6.png?raw=true');
+			background-size: cover;
+		}
+
+		.L7{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L7.png?raw=true');
+			background-size: cover;
+		}
+
+		.L8{
+			width: 4rem;
+			height: 80%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/L8.png?raw=true');
+			background-size: cover;
+		}
+
+		.Intro{
+			display: flex;
+			width: 97%;
+			height: 40rem;
+			flex-direction: row;
+			justify-content: space-between;
+			position: relative;
+			margin: auto;
+		}
+
+		.Intro_Image{
+			min-width: 72rem;
+			max-width: 80%;
+			height:  100%;
+			background-image: url('https://github.com/AbhiRex-hub/Casscade/blob/main/Intro_Image.jpg?raw=true');
+			box-shadow: 2px 2px 10px black;
+		}
+
+		.Intro_Text{
+			color:  white;
+			font-family: sans-serif;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.I1{
+			color: black;
+			position:  absolute;
+			top: 10rem;
+			font-size: 2rem;
+			margin-left: 20rem;
+			font-family: sans-serif;
+			font-family: 'Oswald', sans-serif;
+		}
+
+		.I2{
+			position:  absolute;
+			top: 12rem;
+			font-size: 8rem;
+			margin-left: 25rem;
+			filter: drop-shadow(2px 2px 5px #333);
+		}
+
+		.I3{
+			position:  absolute;
+			top: 20rem;
+			font-size: 8rem;
+			margin-left: 35.25rem;
+			filter: drop-shadow(2px 2px 5px #333);
+		}
+
+		.Sidebar{
+			min-width: 18rem;
+			max-width: 20%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.S1{
+			width: 85%;
+			height: 7%;
+			background:  linear-gradient(to right, #380036, #326da7);
+			box-shadow: -1px 0px 7px black;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: sans-serif;
+			font-family: 'Oswald', sans-serif;
+		}
+
+		.Sidebar a{
+			text-decoration: none;
+			color: white;
+			transition: all 0.5s;
+		}
+
+		.N2  a{
+			color: black;
+		}
+
+		.N2 a:hover{
+			color: darkgreen;
+		}
+
+		a:hover{
+			color:  hotpink;
+			transform: scale(1.1);
+		}
+
+		.Carousel{
+			min-width: 87rem;
+			height: 30rem;
+			margin: auto;
+			box-shadow: 2px 2px 10px black;
+		}
+
+		.E_Carousel{
+			min-width: 87rem;
+			max-width: 90%;
+			height: 30rem;
+			margin: auto;
+			box-shadow: 2px 2px 10px black;
+		}
+
+		.About_Block{
+			background: linear-gradient(45deg, #FF9600, #EA4771, #86065F);
+			width: 100%;
+			height: 100%;
+			display: grid;
+			grid-template-rows: 1fr 7fr;
+		}
+
+		.About_Button{
+			background-color: black;
+			color: white;
+			width: 35%;
+			box-shadow: 1px 1px 5px black;
+			font-size: 2.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family:'Oswald', sans-serif;
+			margin: auto;
+		}
+
+		.About_Description{
+			width: 80%;
+			height: 80%;
+			margin: auto;
+			text-align: center;
+			font-family:'Oswald', sans-serif;
+			font-size: 1.5rem;
+		}
+
+		.Why_CE{
+			width: 80%;
+			height: 70%;
+			margin: auto;
+			display: grid;
+			grid-template-columns: 2fr 5fr;
+			grid-column-gap: 3rem;
+		}
+
+		.Why_CE_Image{
+			background-image: url('https://media.architecturaldigest.com/photos/6081919db41653acb3f3a17b/16:9/w_2560%2Cc_limit/matt-artz-nTRDnDdDYk8-unsplash.jpg');
+			background-size: cover;
+		}
+
+		.Why_CE_Description{
+			color: black;
+			font-family:'Oswald', sans-serif;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+
+		.E_Block{
+			background: linear-gradient(#7FCB72, #0F8B93);
+			width: 100%;
+			height: 100%;
+			display: grid;
+			grid-template-rows: 1fr 7fr;
+		}
+
+		.E_Button{
+			background-color: black;
+			color: white;
+			width: 30%;
+			box-shadow: 1px 1px 5px black;
+			font-size: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family:'Oswald', sans-serif;
+			margin: auto;
+		}
+
+		.E_Tile{
+			width: 70%;
+			height: 80%;
+			display: grid;
+			grid-template-columns: 0.85fr 1fr;
+			grid-column-gap: 3rem;
+			margin:auto;
+		}
+
+		.E_Image1{
+			background-image: url('https://wallpaperaccess.com/full/1663640.jpg');
+			background-size: cover;
+		}
+
+		.E_Description{
+			color: black;
+			font-family:  sans-serif;
+			font-size: 1.5rem;
+			margin: auto;
+			text-align: center;
+		}
+
+		.E_Image2{
+			width: 90%;
+			height: 100%;
+			background-image: url('https://assets.justenergy.com/wp-content/uploads/2020/11/wind-energy-image-definition.jpg');
+			background-size: cover;
+		}
+
+		.E_Image3{
+			width: 90%;
+			height: 100%;
+			background-image: url('https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy82ODc0ODc0L29yaWdpbi5qcGciLCJleHBpcmVzX2F0IjoxNjcwMTc0NjUzfQ.94iZ1L4vc2NRLphQRSHmO06fXkj5mvV9wmp_bxgX3Go/img.jpg?width=980');
+			background-size: cover;
+		}
+
+		.E_Image4{
+			width: 90%;
+			height: 100%;
+			background-image: url('https://assets.taraenergy.com/wp-content/uploads/2020/12/1-geothermal-energy-definition-pros-cons-mountain-image.jpg');
+			background-size: cover;
+		}
+
+		.E_Image5{
+			width: 90%;
+			height: 100%;
+			background-image: url('https://www.energy.gov/sites/default/files/styles/full_article_width/public/Biomass%20Resources.png?itok=7msmb1_6');
+			background-size: cover;
+		}
+
+		.E_Image6{
+			width: 90%;
+			height: 100%;
+			background-image: url('https://d3hnfqimznafg0.cloudfront.net/images/Article_Images/ImageForArticle_950(1).jpg');
+			background-size: cover;
+		}
+
+		.E_Image7{
+			width: 90%;
+			height: 100%;
+			background-image: url('https://g.foolcdn.com/editorial/images/583586/energy-storage-near-solar-and-wind-farms.jpg');
+			background-size: cover;
+		}
+
+		.social_media{
+			margin: auto;
+			margin-bottom: 4rem;
+			margin-top: -5rem;
+			width: 30%;
+			height: 4rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.sm1{
+			width: 10%;
+			height: 70%;
+			background-image: url('https://o.remove.bg/downloads/bc5540a1-23e1-4605-99ce-661b7e60b2d5/image-removebg-preview.png');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.sm2{
+			width: 10%;
+			height: 70%;
+			background-image: url('https://o.remove.bg/downloads/e6a2c68b-c925-4996-bc11-a38063565cde/image-removebg-preview.png');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.sm3{
+			width: 10%;
+			height: 70%;
+			background-image: url('https://o.remove.bg/downloads/857ec35c-fc87-4355-a9f9-286648aff8f3/image-removebg-preview.png');
+			background-size: cover;
+			background-position: center;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<div class="Navigation">
+			<div class="N1">
+				<div class="Logo">ENERGY EDUCATION</div>
+				<div class="L1"></div>
+				<div class="L2"></div>
+				<div class="L3"></div>
+				<div class="L4"></div>
+				<div class="L5"></div>
+				<div class="L6"></div>
+				<div class="L7"></div>
+				<div class="L8"></div>
+			</div>
+			<div class="N2"><h2><a href="#About_ID">ABOUT US</a></h2></div>
+		</div>
+
+		<div class="Intro">
+			<div class="Intro_Image">
+				<div class="Intro_Text"><div class="I1">UNDERSTANDING</div><div class="I2">CLEAN</div><br><div class="I3">ENERGY</div></div>
+			</div>
+			<div class="Sidebar">
+				<div class="S1"><a href="#E1">SOLAR ENERGY</a></div>
+				<div class="S1"><a href="#E2">WIND ENERGY</a></div>
+				<div class="S1"><a href="#E3">HYDROELECTRIC POWER</a></div>
+				<div class="S1"><a href="#E4">GEOTHERMAL ENERGY</a></div>
+				<div class="S1"><a href="#E5">BIOMASS</a></div>
+				<div class="S1"><a href="#E6">BIOFUEL</a></div>
+				<div class="S1"><a href="#E7">HYDROGEN</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="Carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround":true, "autoPlay": true, "setGallerySize": false, "selectedAttraction": 0.02}'>
+
+		<div class="About_Block" id = "About_ID">	
+			<div class="About_Button">About Us</div>	
+			<div class="About_Description"><p><strong style="font-size: 1.5rem;">ENERGY EDUCATION</strong> is an initiative to educate each and every person about Clean Energy sources.<br><br> Because, we believe that the future of the planet depends on Clean Energy.<br> Climate change, pollution, global warming, and many other serious problems are rising <br> and renewable energy sources are the answer! <br><br> Thus, it is important to understand what these sources are and how we can use them efficiently.</p></div>
+		</div>
+		
+		<div class="About_Block" id = "About_ID">	
+			<div class="About_Button">WHY CLEAN ENERGY</div>	
+			<div class="Why_CE">
+				<div class="Why_CE_Image"></div>
+				<div class="Why_CE_Description">Conventional energy sources are depleting at a faster rate and <br> the most severe problem with these energy sources is the <br> emission of greenhouse gases which leads to <br> global warming, pollution due to which today <br> complex problems like climate change have risen. <br> To solve these problems, planting trees alone is not enough!<br>Clean energy is energy that comes from renewable, zero emission sources <br> that do not pollute the atmosphere when used,<br>  as well as energy saved by energy efficiency measures.</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E1">	
+			<div class="E_Button">SOLAR ENERGY</div>
+			<div class="E_Tile">
+				<div class="E_Image1"></div>
+				<div class="E_Description">This common renewable, green energy source is usually produced using photovoltaic cells that capture sunlight and turn it into electricity. Solar power is also used to heat buildings and for hot water as well as for cooking and lighting. Solar power has now become affordable enough to be used for domestic purposes including garden lighting, although it is also used on a larger scale to power entire neighbourhoods.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E2">	
+			<div class="E_Button">WIND ENERGY</div>
+			<div class="E_Tile">
+				<div class="E_Image2"></div>
+				<div class="E_Description">Wind power or wind energy is the use of wind turbines to generate electricity. Wind power is a popular, sustainable, renewable energy source that has a much smaller impact on the environment than burning fossil fuels. Wind farms consist of many individual wind turbines, which are connected to the electric power transmission network</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E3">	
+			<div class="E_Button">HYDROELECTRIC POWER</div>
+			<div class="E_Tile">
+				<div class="E_Image3"></div>
+				<div class="E_Description">Hydropower, or hydroelectric power, is a renewable source of energy that generates power by using a dam or diversion structure to alter the natural flow of a river or other body of water. Hydropower relies on the endless, constantly recharging system of the water cycle to produce electricity, using a fuel—water—that is not reduced or eliminated in the process. Hydropower utilizes turbines and generators to convert that kinetic energy into electricity, which is then fed into the electrical grid to power homes, businesses, and industries.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E4">	
+			<div class="E_Button">GEOTHERMAL ENERGY</div>
+			<div class="E_Tile">
+				<div class="E_Image4"></div>
+				<div class="E_Description">This type of green power uses thermal energy that has been stored just under the earth’s crust. While this resource requires drilling to access, thereby calling the environmental impact into question, it is a huge resource once tapped into. Geothermal energy has been used for bathing in hot springs for thousands of years and this same resource can be used for steam to turn turbines and generate electricity. </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E5">	
+			<div class="E_Button">BIOMASS</div>
+			<div class="E_Tile">
+				<div class="E_Image5"></div>
+				<div class="E_Description">This renewable resource also needs to be carefully managed in order to be truly labelled as a ‘green energy’ source. Biomass power plants use wood waste, sawdust and combustible organic agricultural waste to create energy. While the burning of these materials releases greenhouse gas these emissions are still far lower than those from petroleum-based fuels.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E6">	
+			<div class="E_Button">BIOFUEL</div>
+			<div class="E_Tile">
+				<div class="E_Image6"></div>
+				<div class="E_Description">Rather than burning biomass as mentioned above, these organic materials can be transformed into fuel such as ethanol and biodiesel. Having supplied just 2.7% of the world’s fuel for transport in 2010, the biofuels are estimated to have the capacity to meet over 25% of global transportation fuel demand by 2050.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="E_Carousel">
+		<div class="E_Block" id="E7">	
+			<div class="E_Button">HYDROGEN</div>
+			<div class="E_Tile">
+				<div class="E_Image7"></div>
+				<div class="E_Description">Hydrogen is a clean fuel. It is an energy carrier that can be used for a broad range of applications. Also it could serve as a possible substitute to liquid and fossil fuels.Its physical properties could be stated as following. At standard temperature and pressure, hydrogen is a nontoxic, nonmetallic, odorless, tasteless, colorless, and highly combustible diatomic gas with the molecular formula H2.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="social_media">
+		<div class="sm1"></div>
+		<div class="sm2"></div>
+		<div class="sm3"></div>
+	</div>
+</body>
+</html>
