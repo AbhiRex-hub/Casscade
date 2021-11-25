@@ -10,3 +10,8 @@ So, please view this website on laptop / desktop only. Please view it on 100% sc
 Below is the screenshot of the landing page:
 
 ![image](https://user-images.githubusercontent.com/68283511/143406306-bfc0eab2-3739-4fd0-b888-804a3f8d0a56.png)
+
+
+The sidebar provides a quick access to corresponding sections. For example, if you click on any of the buttons below, then corresponding section will be displayed.
+
+![image](https://user-images.githubusercontent.com/68283511/143406757-6391fd7a-b461-4ff5-9c1e-ddf078824758.png)
