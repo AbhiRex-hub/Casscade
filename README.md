@@ -1,4 +1,4 @@
-# Casscade
+# ENERGY EDUCATION (AN INFORMATIVE WEBSITE LANDING PAGE)
 ##### Made for the competition "CaSScade" #####
 
 This website is created for the 3rd round of "CaSScade" competition, in which the theme of the website was given as "Clean Energy".
